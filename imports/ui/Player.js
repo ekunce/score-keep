@@ -12,7 +12,7 @@ class Player extends React.Component {
           <div>
             <h3 className="player__name">{player.name}</h3>
             <p className="player__stats">
-               {player.score} point(s).
+               {this.props.player.rank} {this.props.player.position} {player.score} point(s).
             </p>
           </div>
           <div className="player__actions">
